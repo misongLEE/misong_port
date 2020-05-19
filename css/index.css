@@ -136,20 +136,17 @@
     transition: all .3s;
 }
 
-.item2 .cont2 .cont2_tit1 li a::before {
+.item2 .cont2 .cont2_tit1 li a::before.underline {
     content: "";
     position: absolute;
     bottom: -2px;
     left: 50%;
     width: 0px;
     border-bottom: 1px solid #9FE6ED;
-    transition: .5s;
-}
-
-.item2 .cont2 .cont2_tit1 li a:hover {
     color: #9AD6CB;
     transition: .5s;
 }
+
 
 .item2 .cont2 .cont2_tit1 .prof:hover::before,
 .item2 .cont2 .cont2_tit1 .intro:hover::before,
@@ -260,15 +257,15 @@
 }
 
 .item2 .cont2 .right_item .bxslider_img .item1 {
-    background:  url(/img/index/ms1.jpg) no-repeat 50% 50% /cover;
+    background:  url(/img/common/ms1.jpg) no-repeat 50% 50% /cover;
 }
 
 .item2 .cont2 .right_item .bxslider_img .item2 {
-    background: url(/img/index/ms2.jpg) no-repeat 50% 80% /cover;
+    background: url(/img/common/ms2.jpg) no-repeat 50% 80% /cover;
 }
 
 .item2 .cont2 .right_item .bxslider_img .item3 {
-    background: url(/img/index/ms3.jpg) no-repeat 50% 50% /cover;
+    background: url(/img/common/ms3.jpg) no-repeat 50% 50% /cover;
 }
 
 
@@ -360,25 +357,25 @@
     z-index: 9;
 }
 
-.item3 .port_wrap .cont4 .hg a::after {
-    background: url(/img/index/church_logo.png) no-repeat 50% 50% /250px;
+.item3 .port_wrap .cont4 .web_wrap .hg a::after {
+    background: url(/img/logo/church_logo.png) no-repeat 50% 50% /250px;
 }
 
-.item3 .port_wrap .cont4 .nbworks a::after {
-    background: url(/img/index/nbworks.png) no-repeat 50% 50%  /200px;
+.item3 .port_wrap .cont4 .web_wrap .nbworks a::after {
+    background: url(/img/logo/nbworks.png) no-repeat 50% 50%  /200px;
     }
 
-.item3 .port_wrap .cont4 .madebys a::after {
+.item3 .port_wrap .cont4 .web_wrap .madebys a::after {
 
-    background: url(/img/index/made.png) no-repeat 50% 50%  /200px;
+    background: url(/img/logo/made.png) no-repeat 50% 50%  /200px;
 }
 
-.item3 .port_wrap .cont4 .bmmost a::after {
-    background: url(/img/index/web.png) no-repeat 50% 50%  /180px;
+.item3 .port_wrap .cont4 .web_wrap .bmmost a::after {
+    background: url(/img/logo/web.png) no-repeat 50% 50%  /180px;
 }
 
-.item3 .port_wrap .cont4 .zen a::after {
-    background: url(/img/index/zen.png) no-repeat 50% 50% /200px;
+.item3 .port_wrap .cont4 .web_wrap .zen a::after {
+    background: url(/img/logo/zen.png) no-repeat 50% 50% /200px;
 }
 
 .item3 .port_wrap .cont4 li:hover a { 
@@ -392,8 +389,6 @@
 }
 
 
-
-
 /*item3 port_wrap 모바일영역*/
 
 .item3 .port_wrap .cont4 .apo a::after {
@@ -404,8 +399,164 @@
 }
 
 .item3 .port_wrap .cont4 .apo a::after {
-    background: url(/img/index/apo.png) no-repeat 50% 50% /150px;
+    background: url(/img/logo/apo.png) no-repeat 50% 50% /150px;
 }
+
+/*item3 port_wrap 편집디자인영역*/
+.item3 .port_wrap .cont4 .edit_wrap .haenara a::after, 
+.item3 .port_wrap .cont4 .edit_wrap .sunchang a::after,
+.item3 .port_wrap .cont4 .edit_wrap .farm a::after,
+.item3 .port_wrap .cont4 .edit_wrap .fxcity a::after,
+.item3 .port_wrap .cont4 .edit_wrap .misong a::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    z-index: 9;
+}
+
+.item3 .port_wrap .cont4 .edit_wrap .haenara a::after {
+    background: url(/img/logo/haenara.png) no-repeat 50% 50% /200px;
+}
+
+.item3 .port_wrap .cont4 .edit_wrap .sunchang a::after {
+    background: url(/img/logo/sunchang.png) no-repeat 50% 50%  /210px;
+}
+
+.item3 .port_wrap .cont4 .edit_wrap .farm a::after {
+    background: url(/img/logo/Farm.png) no-repeat 55% 52% /150px;
+}
+
+.item3 .port_wrap .cont4 .edit_wrap .misong a::after {
+    background: url(/img/logo/misong.png) no-repeat 50% 50% /220px;
+}
+
+.item3 .port_wrap .cont4 .edit_wrap .fxcity a::after {
+    background: url(/img/logo/fxcity.png) no-repeat 50% 50% /170px;
+}
+
+
+
+/*item3 port_wrap 웹디자인영역*/
+
+.item3 .port_wrap .cont4 .webdesian_wrap .hg a::after, 
+.item3 .port_wrap .cont4 .webdesian_wrap .madebys a::after,
+.item3 .port_wrap .cont4 .webdesian_wrap .bmmost a::after,
+.item3 .port_wrap .cont4 .webdesian_wrap .enzyem a::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    z-index: 9;
+}
+
+.item3 .port_wrap .cont4 .webdesian_wrap .hg a::after {
+    background: url(/img/logo/church_logo.png) no-repeat 50% 50% /250px;
+}
+
+.item3 .port_wrap .cont4 .webdesian_wrap .madebys a::after {
+    background: url(/img/logo/made.png) no-repeat 50% 50%  /200px;
+}
+
+.item3 .port_wrap .cont4 .webdesian_wrap .bmmost a::after {
+    background: url(/img/logo/web.png) no-repeat 50% 50%  /180px;
+}
+
+.item3 .port_wrap .cont4 .webdesian_wrap .enzyem a::after {
+    background: url(/img/logo/enzyem.png) no-repeat 50% 50% /220px;
+}
+
+
+
+/*item3 port_wrap 리플렛디자인영역*/
+
+.item3 .port_wrap .cont4 .leaf_wrap .kimje a::after, 
+.item3 .port_wrap .cont4 .leaf_wrap .sunchang a::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    z-index: 9;
+}
+
+.item3 .port_wrap .cont4 .leaf_wrap .kimje a::after {
+    background: url(/img/logo/kimje.png) no-repeat 50% 50% /200px;
+}
+
+.item3 .port_wrap .cont4 .leaf_wrap .sunchang a::after {
+    background: url(/img/logo/sunchang.png) no-repeat 50% 50%  /200px;
+}
+
+/*item3 port_wrap 블로그스킨디자인영역*/
+
+.item3 .port_wrap .cont4 .blog_wrap .yein a::after, 
+.item3 .port_wrap .cont4 .blog_wrap .rosel a::after,
+.item3 .port_wrap .cont4 .blog_wrap .car a::after,
+.item3 .port_wrap .cont4 .blog_wrap .shcool a::after,
+.item3 .port_wrap .cont4 .blog_wrap .exercise a::after,
+.item3 .port_wrap .cont4 .blog_wrap .beauty a::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    z-index: 9;
+}
+
+.item3 .port_wrap .cont4 .blog_wrap .yein a::after {
+    background: url(/img/blog/yein.png) no-repeat 50% 50% /250px;
+}
+
+.item3 .port_wrap .cont4 .blog_wrap .rosel a::after {
+    background: url(/img/blog/rosel.jpg) no-repeat 50% 50% /250px;
+}
+.item3 .port_wrap .cont4 .blog_wrap .car a::after {
+    background: url(/img/blog/car.png) no-repeat 50% 50% /250px;
+}
+
+.item3 .port_wrap .cont4 .blog_wrap .shcool a::after {
+    background: url(/img/blog/school.jpg) no-repeat 50% 50% /250px;
+}
+
+.item3 .port_wrap .cont4 .blog_wrap .exercise a::after {
+    background: url(/img/blog/wit1.jpg) no-repeat 50% 50% /250px;
+}
+
+.item3 .port_wrap .cont4 .blog_wrap .beauty a::after {
+    background: url(/img/blog/beauty.png) no-repeat 50% 50% /250px;
+}
+
+
+
+/*item3 port_wrap sns디자인영역*/
+
+.item3 .port_wrap .cont4 .snscard_wrap .anistin a::after, 
+.item3 .port_wrap .cont4 .snscard_wrap .fxcity a::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    z-index: 9;
+}
+
+.item3 .port_wrap .cont4 .snscard_wrap .anistin a::after {
+    background: url(/img/logo/anistin.png) no-repeat 50% 50% /180px;
+}
+
+.item3 .port_wrap .cont4 .snscard_wrap .fxcity a::after {
+    background: url(/img/logo/fxcity.png) no-repeat 50% 50%  /180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* .item4 .cont1 */
