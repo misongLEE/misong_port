@@ -1,0 +1,660 @@
+/* item1 */
+
+.item1 {
+    position: relative;
+}
+
+.item1 .about_txt {
+    position: absolute;
+    top: 360px;
+    left: 20%;
+    text-align: center;
+}
+
+.item1 .about_txt .tit1 span,
+.item1 .about_txt .tit2 span {
+    font-family: 'Poiret One';
+    font-size: 60px;
+    color: #Fff;
+}
+
+.item1 .about_txt .tit2 em {
+    font-family: 'Poiret One';
+    color: #9FE6ED;
+}
+
+/* item1 mouse */ 
+
+.item1 .mouse {
+    position: absolute;
+    top: 580px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.item1 .mouse {
+    width: 30px;
+    height: 55px;
+    border-radius: 90px;
+    border: 2px solid #fff;
+    border-radius: 60px;
+}
+
+.item1 .mouse::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 200px;
+    transform: translateX(-50%);
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+    from{
+        opacity: 1;
+        top: 10px;
+    }
+    to {
+        opacity: 0;
+        top: 40px;
+    }
+}
+
+
+/*item2 cont1*/
+
+.item2 {
+    position: relative;
+}
+
+.item2 .cont1 {
+    position: absolute;
+    top: 480px;
+    left: 50px;
+    margin-top: -50px;    
+}
+
+.item2 .cont1 p {
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 20px;
+    color: #fff;    
+}
+
+.item2 .cont1 p::after {
+    content: "?";
+    position: absolute;
+    top: 4px;
+    left: -24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #9AD6CB;
+} 
+
+.item2 .cont1 p::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -32px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9FE6ED;
+    border-radius: 50%;
+}
+
+
+/*item2 cont2*/
+
+.item2 .cont2 {
+    position: absolute;
+    top: 280px;
+    left: 20%;
+}
+
+.item2 .cont2 strong {
+    font-family: 'Poiret One';
+    font-size: 40px;
+}
+
+.item2 .cont2 .cont2_tit1 li {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+}
+
+.item2 .cont2 .cont2_tit1 li a {
+    display: block;
+    position: relative;
+    font-family: 'Noto Sans KR';
+    font-size: 20px;
+    text-align: center;
+    margin-right: 50px;
+    color: #fff;
+    transition: all .3s;
+}
+
+.item2 .cont2 .cont2_tit1 li a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0px;
+    border-bottom: 1px solid #9FE6ED;
+    transition: .5s;
+}
+
+.item2 .cont2 .cont2_tit1 li a:hover {
+    color: #9AD6CB;
+    transition: .5s;
+}
+
+.item2 .cont2 .cont2_tit1 .prof:hover::before,
+.item2 .cont2 .cont2_tit1 .intro:hover::before,
+.item2 .cont2 .cont2_tit1 .exper:hover::before {
+    left: 0;
+}
+
+.item2 .cont2 .cont2_tit1 .prof:hover::before {
+    width: 60px;
+}
+
+.item2 .cont2 .cont2_tit1 .intro:hover::before {
+    width: 90px;
+}
+
+.item2 .cont2 .cont2_tit1 .exper:hover::before {
+    width: 100px;
+}
+
+
+/* .item2 .cont2 info_wrap*/
+
+.item2 .cont2 .info_tit1,
+.item2 .cont2 .info_tit2 {
+    display: inline-block;
+    line-height: 40px;
+}
+
+.item2 .cont2 .info_tit1 li {
+    font-size: 20px;
+    color: #fff;
+    width: 120px;
+}
+
+.item2 .cont2 .info_tit2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/*.item2 .cont2 info_2 */
+
+.item2 .cont2 .info_2 span {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: -0.8px;
+    color: #fff;
+}
+
+
+/*.item2 .cont2 info_3 */
+
+.item2 .cont2 .info_3 ul li {
+    display: inline-block;   
+    margin: 0px 0 20px 0;
+} 
+
+.item2 .cont2 .info_3 ul li a {
+    font-size: 18px;
+    color: #fff;
+    margin-right: 50px;
+}
+
+.item2 .cont2 .info_3 ul li a.color {
+    color: #9AD6CB;
+    transition: ease-in-out .5s;
+}
+
+/*.item2 .cont2 info_3 */
+
+.item2 .cont2 .info_3 > div h3,
+.item2 .cont2 .info_3 > div em {
+    color: #fff;
+    letter-spacing: -0.8px;
+}
+
+.item2 .cont2 .info_3 > div h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.item2 .cont2 .info_3 > div em {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+}
+
+/*.item2 .cont2 right_item */
+.bx-wrapper {
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+.item2 .cont2 .right_item {
+    position: absolute;
+    top: 40px;
+    right: -600px;
+}
+
+
+.item2 .cont2 .right_item .bxslider_img .item1,
+.item2 .cont2 .right_item .bxslider_img .item2,
+.item2 .cont2 .right_item .bxslider_img .item3 {
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+}
+
+.item2 .cont2 .right_item .bxslider_img .item1 {
+    background:  url(/img/index/ms1.jpg) no-repeat 50% 50% /cover;
+}
+
+.item2 .cont2 .right_item .bxslider_img .item2 {
+    background: url(/img/index/ms2.jpg) no-repeat 50% 80% /cover;
+}
+
+.item2 .cont2 .right_item .bxslider_img .item3 {
+    background: url(/img/index/ms3.jpg) no-repeat 50% 50% /cover;
+}
+
+
+/*item3 cont1*/
+
+.item3 {
+    position: relative;
+}
+
+.item3 .cont1 {
+    position: absolute;
+    top: 480px;
+    left: 50px;
+    margin-top: -50px;    
+}
+
+.item3 .cont1 p {
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 20px;
+    color: #fff;    
+}
+
+.item3 .cont1 p::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #9FE6ED;
+} 
+
+.item3 .cont1 p::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -32px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9FE6ED;
+    border-radius: 50%;
+    background: url(/img/index/work.png) no-repeat 50% 38% /13px;
+}
+
+
+/*item3 port_wrap web영역*/
+
+.item3 .cont2 strong {
+    font-family: 'Poiret One';
+    font-size: 40px;
+}
+
+.item3 .port_wrap {
+    position: absolute;
+    top: 200px;
+    left: 20%;
+    width: 1200px;
+}
+
+.item3 .port_wrap .cont3 ul li a:hover,
+.item3 .port_wrap .cont3 ul li a.on {
+    color: #9AD6CB;
+    transition: ease-in-out .3s;
+}
+
+.item3 .port_wrap .cont3 ul li,
+.item3 .port_wrap .cont4 ul li {
+    display :inline-block;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.item3 .port_wrap .cont4 ul li  {
+    display: inline-block;
+    background-color: #fff;
+    width: 250px;
+    height: 200px;
+}
+
+.item3 .port_wrap .cont4 .hg a::after, 
+.item3 .port_wrap .cont4 .nbworks a::after, 
+.item3 .port_wrap .cont4 .madebys a::after,
+.item3 .port_wrap .cont4 .bmmost a::after,
+.item3 .port_wrap .cont4 .zen a::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    z-index: 9;
+}
+
+.item3 .port_wrap .cont4 .hg a::after {
+    background: url(/img/index/church_logo.png) no-repeat 50% 50% /250px;
+}
+
+.item3 .port_wrap .cont4 .nbworks a::after {
+    background: url(/img/index/nbworks.png) no-repeat 50% 50%  /200px;
+    }
+
+.item3 .port_wrap .cont4 .madebys a::after {
+
+    background: url(/img/index/made.png) no-repeat 50% 50%  /200px;
+}
+
+.item3 .port_wrap .cont4 .bmmost a::after {
+    background: url(/img/index/web.png) no-repeat 50% 50%  /180px;
+}
+
+.item3 .port_wrap .cont4 .zen a::after {
+    background: url(/img/index/zen.png) no-repeat 50% 50% /200px;
+}
+
+.item3 .port_wrap .cont4 li:hover a { 
+    filter: blur(3px);
+    transition:all .3s;
+}
+
+.item3 .port_wrap .cont4 li:hover{
+    background: rgba(0,0,0,1) url(/img/index/plus.png) no-repeat 90% 90% /50px;
+    transition: ease-in-out 0.5s;
+}
+
+
+
+
+/*item3 port_wrap 모바일영역*/
+
+.item3 .port_wrap .cont4 .apo a::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 200px;    
+}
+
+.item3 .port_wrap .cont4 .apo a::after {
+    background: url(/img/index/apo.png) no-repeat 50% 50% /150px;
+}
+
+
+/* .item4 .cont1 */
+
+.item4 .cont1 {
+    position: absolute;
+    top: 480px;
+    left: 50px;
+    margin-top: -50px;    
+}
+
+.item4 .cont1 p {
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 20px;
+    color: #fff;    
+}
+
+.item4 .cont1 p::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -32px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9FE6ED;
+    border-radius: 50%;
+    background: url(/img/index/bell.png) no-repeat 50% 38% /16px;
+}
+
+
+
+/* .item4 .skill_wrap */
+
+.item4 {
+    position: relative;
+}
+
+.item4 .skill_wrap {
+    position: absolute;
+    top: 200px;
+    left: 20%;
+    width: 300px;
+}
+
+.item4 .skill_wrap strong {
+    font-family: 'Poiret One';
+    font-size: 40px;
+}
+
+.graph_wrap {
+    position: absolute;
+    top: 200px;
+    left: 20%;
+}
+
+.graph_wrap > div {
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 150px;
+    width: 500px;
+}
+
+.graph {
+    height: 25px;
+    background: #fff;
+    border-radius: 40px;
+    margin: 0 0 50px;
+}
+
+.graph_left > span,
+.graph_right > span {
+    font-size: 20px;
+}
+
+
+.graph span {
+    display: block;
+    height: 25px;
+    padding: 0 10px;
+    text-align: right;
+    line-height: 25px;
+    border-radius: 40px;
+    background-color: #9AD6CB;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.graph.stack1 span {animation: stack1 2s 1;}
+.graph.stack2 span {animation: stack2 2s 1;}
+.graph.stack3 span {animation: stack3 2s 1;}
+.graph.stack4 span {animation: stack4 2s 1;}
+.graph.stack5 span {animation: stack1 2s 1;}
+
+
+
+@keyframes stack1 {
+    0% {
+        width: 0;
+        color: rgba(255,255,255,0);}
+    40% { color: rgba(255,255,255,1);}
+    100% {width: 80%;}
+}
+
+@keyframes stack2 {
+    0% {
+        width: 0;
+        color: rgba(255,255,255,0);}
+    40% { color: rgba(255,255,255,1);}
+    100% {width: 70%;}
+}
+
+@keyframes stack3 {
+    0% {
+        width: 0;
+        color: rgba(255,255,255,0);}
+    40% { color: rgba(255,255,255,1);}
+    100% {width: 60%;}
+}
+
+@keyframes stack4 {
+    0% {
+        width: 0;
+        color: rgba(255,255,255,0);}
+    40% { color: rgba(255,255,255,1);}
+    100% {width: 50%;}
+}
+
+@keyframes stack5 {
+    0% {
+        width: 0;
+        color: rgba(255,255,255,0);
+    }
+    40% { color: rgba(255,255,255,1);}
+    100% {width: 80%;}
+}
+
+
+/*item5 cont1*/
+
+.item5 {
+    position: relative;
+}
+
+.item5 .cont1 {
+    position: absolute;
+    top: 480px;
+    left: 50px;
+    margin-top: -50px;    
+}
+
+.item5 .cont1 p {
+    transform: translateY(-50%) rotate(-90deg);
+    font-size: 20px;
+    color: #fff;    
+}
+
+.item5 .cont1 p::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -32px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #9FE6ED;
+    border-radius: 50%;
+    background: url(/img/index/bell.png) no-repeat 50% 38% /16px;
+}
+
+
+/*item5 cont_wrap - 5번째 페이지 컨택트 영역 */ 
+
+.item5 .cont_wrap {
+    position: absolute;
+    top: 480px;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -180px;
+}
+
+.item5 .cont_wrap strong {
+    font-family: 'Poiret One';
+    font-size: 40px;
+}
+
+.item5 .cont_wrap em {
+    color: #9FE6ED;
+}
+
+.item5 .cont_wrap ul {
+    margin-top: 50px;
+}
+
+.item5 .cont_wrap ul li {
+    display: inline-block;
+    margin-right: 180px;
+}
+
+.item5 .cont_wrap ul li .icon .circle {
+    position: relative;
+    border-radius: 110px;
+    width: 150px;
+    height: 150px;
+    background: #ddd;
+    cursor: pointer;
+}
+
+.item5 .cont_wrap ul li .icon .circle::after{
+    content:"";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 110px;
+}
+
+.item5 .cont_wrap ul li .icon .circle:hover::after{
+    background-size: 65px;
+    transition: .3s;
+}
+
+.item5 .cont_wrap .contact1 .icon .circle::after{
+    background: #fff url(/img/index/call.png) no-repeat 65% 50% /55px;
+}
+
+.item5 .cont_wrap .contact2 .icon .circle::after{
+    background: #fff url(/img/index/mail.png) no-repeat 50% 53% /55px;
+}
+
+.item5 .cont_wrap .contact3 .icon .circle::after{
+    background: #fff url(/img/index/home.png) no-repeat 50% 45% /55px;
+}
+
+.item5 .cont_wrap ul li .txt {
+    margin-top: 30px;
+}
+
+.item5 .cont_wrap ul li .txt a {
+    font-size: 24px;
+}
+
+.item5 .cont_wrap .contact1 .icon {
+    margin-left: 8px;
+}
+
+.item5 .cont_wrap .contact2 .icon {
+    margin-left: 60px;
+}
+
+.item5 .cont_wrap .contact3 .icon {
+    margin-left: 25px;
+}

@@ -1,0 +1,135 @@
+/* menu */
+.menu {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+}
+
+.menu span{
+    display: block;
+    font-size: 30px;
+    color: #ddd;
+    line-height: 10px;    
+}
+
+/* menu_on */
+
+.menu_on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.8);
+}
+
+.menu_on .close_bt {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 49px;
+    height: 48px;
+    border: 1px solid #ddd;
+    background: url(/img/index/close.png) no-repeat  50% 50% /35px;
+    cursor: pointer;
+}
+
+.menu_on .close_bt a {
+    text-indent: -2000px;
+    overflow: hidden;
+    color: transparent;
+}
+
+
+/* menu_txt */
+
+ .menu_on .menu_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: -133px;
+    text-align: center;
+}
+
+.menu_on .menu_txt li {
+    padding: 0 15px;
+}
+
+.menu_on .menu_txt li a {
+    position: relative;
+    font-family: 'Poiret One';
+    font-size: 50px;
+    line-height: 90px;
+    color: #fff;
+}
+.menu_on .menu_txt li:hover {
+    list-style: line-through;
+    background-color: #9FE6ED;
+    border-radius: 80px;
+    animation-name: slide;
+    animation-duration:0.3s;
+    animation-duration: leaner;
+    animation-iteration-count:3;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 1;        
+      }
+      100% {
+        opacity: 0.7;
+      }
+    }
+
+/*footerWrap*/
+#footerWrap {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    font-size: 0;
+}
+
+#footerWrap #footer {
+    width: 1920px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#footerWrap #footer ul li {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+#footerWrap #footer ul li a {
+    font-family: 'Poiret One';
+    font-size: 20px;
+    color: #fff;
+    line-height: 75px;
+    padding: 30px 160px;
+}
+
+#footerWrap #footer ul li a:hover {
+    color: #9FE6ED;
+    transition: all .5s;
+}
+
+
+/* top 버튼*/
+.top_button a {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index:9999;
+    color: (0,0,0,0);
+    background: #222 url(/img/index/top_arrow.png) no-repeat 50% 50% /18px;
+}
