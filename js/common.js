@@ -26,8 +26,10 @@ $(function(){
     });
 
 
+
     // 자기소개영역 카테고리 클릭시 내용변경 
     $(".prof").click(function(){
+      $(".cont2_tit1 li a").addClass('underline').siblings().removeclass('underline');
       $(".info_2").fadeOut(100);
       $(".info_3").fadeOut(100);
       $(".info_wrap").fadeIn(700);
@@ -106,35 +108,14 @@ $(function(){
     $(".cont3 .leaf").click(function(){
       $(".cont4 .leaf_wrap").show().siblings().hide();
     });    
-    // sns_card 클릭시 sns_card 포트폴리오가 나타난다.
-    $(".cont3 .sns").click(function(){
+
+    // blog 클릭시 sns_card 포트폴리오가 나타난다.
+    $(".cont3 .blog").click(function(){
       $(".cont4 .snscard_wrap").show().siblings().hide();
-      
     });
 
-
-    // 전체 원페이지 휠스크롤 swiper
-    var swiper = new Swiper('.swiper-container', {
-      direction: 'vertical',
-      slidesPerView: 1,
-      spaceBetween: 0,
-      mousewheel: true,
-      speed : 1000,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-  });
-
-  var $menu_txt = $('#footer ul li'),
-      $item = $('.swiper-slide > div');
-
-      console.log($menu_txt);
-      /*메뉴를 클릭하면*/
-      $menu_txt.click
-
-
-
-
+    // sns_card 클릭시 sns_card 포트폴리오가 나타난다.
+    $(".cont3 .sns").click(function(){
+      $(".cont4 .blog_wrap").show().siblings().hide();
+    });  
 });
-
